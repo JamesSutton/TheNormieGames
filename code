@@ -116,9 +116,6 @@ namespace TheNormieGames
                     display = 'e';
                     Console.Clear();
                 }
-
-                Console.ReadLine();
-
             }
 
 
@@ -129,7 +126,7 @@ namespace TheNormieGames
                 while (loading == true)
                 {
                     Console.WriteLine("Get ready...");
-                    System.Threading.Thread.Sleep(5000);
+                    System.Threading.Thread.Sleep(2500);
                     Console.Clear();
                     Console.WriteLine("Ready!");
                     loading = false;
@@ -137,7 +134,7 @@ namespace TheNormieGames
 
                 while (loading == false)//playing game
                 {
-
+                    playGame();
                 }
                 Console.ReadLine();
             }
@@ -166,6 +163,22 @@ namespace TheNormieGames
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write(menuText);
             Console.ResetColor();
+        }
+
+        public static void playGame()//function of actual gameplay
+        {
+            Console.Clear();
+            Console.WriteLine("3...");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("2...");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("1...");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("Let's play...");
+            System.Threading.Thread.Sleep(3500);
+            Console.Clear();
+            Console.WriteLine("'Welcome to The Normie Games', bellows the loudspeaker.");
+
         }
     }
 }
