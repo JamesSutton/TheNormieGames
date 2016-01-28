@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleGame
+namespace TheNormieGames
 {
     class Program
     {
-        public class Normie{
+        public class Normie
+        {
             public int health = 100;
             public int death = 0;
             public string name;
@@ -110,7 +111,7 @@ namespace SimpleGame
                     Console.Clear();
                 }
 
-                else if (menuSel == 'e' | menuSel =='E')
+                else if (menuSel == 'e' | menuSel == 'E')
                 {
                     display = 'e';
                     Console.Clear();
@@ -144,7 +145,8 @@ namespace SimpleGame
 
 
         }
-        public static void displayMenu(){
+        public static void displayMenu()
+        {
             Console.WriteLine("*****************");
             Console.WriteLine();
             red("P.");
@@ -159,7 +161,8 @@ namespace SimpleGame
             Console.WriteLine("*****************");
         }
 
-        public static void red(string menuText){
+        public static void red(string menuText)
+        {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write(menuText);
             Console.ResetColor();
